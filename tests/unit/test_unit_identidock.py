@@ -54,7 +54,7 @@ def mocked_redis(request):
 
 def test_get_mainpage(client):
 	page = client.get("/")
-	assert page.status_code == 200
+	assert page.status_code == 205
 	assert 'Joe Bloggs' in str(page.data)
 
 
